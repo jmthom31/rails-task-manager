@@ -32,6 +32,10 @@ class TasksController < ApplicationController
     redirect_to tasks_path
   end
 
+  def new_record?
+    @new_record
+  end
+
   private
 
   def task_params
